@@ -10,8 +10,8 @@
     <div class="section1">
         <div>Graph Algorithms</div>
         <div>
-            <pre class='BFS: cpp'>
-                void dfs_connect(vector<vector<char>>& matrix,vector<vector<int>>& visited, int i, int j){
+            <pre>
+                    void dfs_connect(vector<vector<char>>& matrix,vector<vector<int>>& visited, int i, int j){
                     int m=matrix.size(),n=matrix[0].size();
                     vector<pair<int,int>> dir={{0,1},{1,0},{-1,0},{0,-1}};
             
@@ -25,11 +25,11 @@
                         int cn=q.front().second;
                         q.pop();
             
-                        for(int i=0;i<4;i++){
+                        for(int i=0;i<;i++){
                             int row=rn+dir[i].first;
                             int col=cn+dir[i].second;
             
-                            if(row>=0 && col>=0 && row<m && col<n && !visited[row][col]){
+                            if(row>=0 && col>=0 && row< && col< && !visited[row][col]){
                                 visited[row][col]=1;
                                 q.push({row,col});
                             }
