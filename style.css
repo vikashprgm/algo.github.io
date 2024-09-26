@@ -1,37 +1,55 @@
 .hero{
     text-align: center;
+    font-family: monospace;
+    font-size: xx-large;
+    font-weight: 900;
+    padding: 20px;
+    background-color: rgb(255, 244, 123);
+    border-radius:20px ;
+    border: 0px;
 }
 
 .section1{
     text-align: left;
     background-color: rgb(253, 249, 205);
     border: 0px;
-    border-radius: 50px;
+    border-radius: 50px 50px 0 0;
+    margin-top: 10px;
 }
 
 .h1{
     text-align: center;
-    padding: 10px;
-    font-family: 'Segoe UI';
-    /* font-weight: 100; */
-    font-size:4vw;
+    padding: 40px;
+    font-family:'Segoe UI';
+    font-size:x-large;
 }
 
-.bfs{
+.crest{
     text-align: left;
     padding-left: 10px;
     font-family: monospace;
 }
-.bfs p{
+.titlehead{
     font-family:sans-serif;
     font-weight: 600;
+    font-size: 18px;
+    width: fit-content;
+    color:rgb(255, 84, 84);
 }
-.dfs p{
-    font-family:sans-serif;
-    font-weight: 600;
+
+.code{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
-.dfs{
-    text-align: left;
+
+.endbar{
+    color: white;
+    font-size: 20px;
+    /* height: 10vh; */
+    text-align: center;
+    background-color: rgb(37, 45, 82);
+    margin-top: 0px;
+    width: 100;
     padding: 10px;
-    font-family: monospace;
 }

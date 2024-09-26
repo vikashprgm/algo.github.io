@@ -10,9 +10,9 @@
   <div class="hero">AlgoNotes by v1kash</div>
   <div class="section1">
     <div class="h1">Graph Algorithms</div>
-    <div class="bfs">
-        <p>Breadth First Search<p>
-      <pre>
+    <div class="bfs crest">
+        <p class="titlehead">Breadth First Search<p>
+      <pre class="code">
         void dfs_connect(vector&ltvector<char>>&gt &matrix, vector&ltvector<int>>&gt &visited, int i, int j){
         int m = matrix.size(), n = matrix[0].size();
         vector&ltpair&ltint, int&gt&gt dir = {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
@@ -40,9 +40,9 @@
         }
       </pre>
     </div>
-    <div class="dfs">
-        <p>Depth First Search</p>
-        <pre>
+    <div class="dfs crest">
+        <p class="titlehead">Depth First Search</p>
+        <pre class="code">
             void dfs(vector&ltvector&ltint&gt&gt &grid,vector&ltvector&ltint&gt&gt &visited,int i, int j){
                     int m=grid.size();
                     int n=grid[0].size();
@@ -58,6 +58,33 @@
                 }
         </pre>
     </div>
+    <div class="misc crest">
+      <p class="titlehead">Detect Cycle in a Graph</p>
+      <pre class="code">
+        bool dfs(vector&ltvector&ltint&gt&gt& graph,vector&ltint&gt &visited,vector&ltint&gt&inpath,int i){
+          visited[i]=1;
+          inpath[i]=1;
+          for(auto it:graph[i]){
+              if(!visited[it] && dfs(graph,visited,inpath,it) ){
+                  return true;
+              }
+              else if(inpath[it]){
+                  return true;
+              }
+          }
+          inpath[i]=0;
+          return false;
+      }
+      </pre>
+    </div>
+  </div>
+  <div class="endbar">
+    <p>
+      Made with Love in India by @_v1k4sh
+    </p>
+    <p>
+      Suggestions/Query : vikash.prgm@gmail.com 
+    </p>
   </div>
 </body>
 </html>
